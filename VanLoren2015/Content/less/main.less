@@ -1,0 +1,24 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light|Architects+Daughter|Waiting+for+the+Sunrise);
+
+@font1: 'Architects Daughter';
+font-family: 'Shadows Into Light', cursive;
+
+html, body {
+  height: 50%;
+}
+
+body {
+  position: relative;
+  left: 0;
+  transition: transform @animation-speed, left @animation-speed;
+  padding-left: @nav-width;
+  font-feature-settings: "kern", "liga" 0, "calt" 0;
+  font-family: @avenir;
+  font-weight: 200;
+  line-height: 1.4;
+  background: #fff;
+}
+#logo {
+    font-family:@font1;
+    font-size:10px;
+}

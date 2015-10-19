@@ -1,0 +1,18 @@
+﻿@using System.Configuration
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>Welcome to VanLoren.com!</title>
+
+        <link href='@ConfigurationManager.AppSettings["LOGOFONT"]' rel='stylesheet' type='text/css'>
+        <link media="screen" rel="stylesheet" href="~/Content/css/main.css">
+    </head>
+
+    <body>
+        <div>
+            @RenderBody()
+        </div>
+    </body>
+</html>
