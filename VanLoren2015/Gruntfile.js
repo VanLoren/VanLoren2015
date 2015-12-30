@@ -11,9 +11,9 @@
                 files: [
                   {
                       expand: true,
-                      cwd: 'Content/css/',
+                      cwd: './Content/less/',
                       src: ['**/*.less', '!**/_*.less'],
-                      dest: 'Content/css/',
+                      dest: './Content/css/',
                       ext: '.css'
                   }
                 ]
@@ -24,7 +24,11 @@
                 atBegin: true
             },
             less: {
-                options: [ { compress: true } ],
+                options: [
+                  {
+                      compress: true
+                  }
+                ],
                 files: ['Content/less/*.less'],
                 tasks: ['less', 'autoprefixer']
             },
@@ -35,8 +39,10 @@
         },
         autoprefixer: {
             site: {
-                    src: 'Content/css/main.css',
-                    options: { browsers: ['last 2 versions', 'ie 9', 'Firefox > 20', '> 5%'] }
+                src: './Content/css/main.css',
+                options: {
+                    browsers: ['last 2 versions', 'ie 9', 'Firefox > 20', '> 5%']
+                }
             }
         },
         grunticon: {
@@ -46,7 +52,7 @@
                           expand: true,
                           cwd: './Content/svg/',
                           src: ['**/*.svg'],
-                          dest: "./Content/images/icons/"
+                          dest: "./Content/images"
                       }
                     ]
             }
