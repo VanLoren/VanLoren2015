@@ -37,6 +37,8 @@ input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit
 button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
 textarea{overflow:auto;vertical-align:top;}
 table{border-collapse:collapse;border-spacing:0}
+footer{position:absolute;bottom:0;width:100%}footer img#seal{display:block;height:auto;width:auto;position:absolute;bottom:0;right:0;padding:0 10px 10px 0}
 html,body{margin:0;padding:0;background-color:#dac3b3}
+footer{text-align:right;vertical-align:baseline}
 #main{background-image:url('/Content/images/main/background-main.png');background-size:cover;position:fixed;height:100vh;width:100vw}
 #logo{font-family:'Shadows Into Light Two';font-size:2em}

@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width" />
         <title>Welcome to VanLoren.com!</title>
 
+        <link rel="shortcut icon" href="~/Content/images/icons/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="~/Content/images/icons/favicon.ico" type="image/x-icon">
         <link href='@ConfigurationManager.AppSettings["LOGOFONT"]' rel='stylesheet' type='text/css'>
         <link media="screen" rel="stylesheet" href="~/Content/css/main.css">
     </head>
@@ -13,6 +15,12 @@
     <body>
         <div id="main">
             @RenderBody()
+
+            <footer>
+                <img id="seal" src="~/Content/images/icons/seal.png" />
+            </footer>
         </div>
+        
+        
     </body>
 </html>
