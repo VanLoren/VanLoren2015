@@ -85,7 +85,11 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\icons\favicon.ico" />
+    <Content Include="Content\images\icons\seal.png" />
+    <Content Include="Content\images\main\background-main.png" />
     <Content Include="Content\images\main\logo.gif" />
+    <Content Include="Content\vendor\normalize\normalize.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Gruntfile.js" />
@@ -137,7 +141,11 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="Content\less\logo.less" />
+    <Content Include="Content\vendor\normalize\.bower.json" />
+    <Content Include="Content\vendor\normalize\bower.json" />
+    <Content Include="Content\vendor\normalize\LICENSE.md" />
+    <Content Include="Content\vendor\normalize\README.md" />
+    <Content Include="Content\less\icons.less" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
@@ -199,6 +207,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\css\" />
+    <Folder Include="Content\svg\" />
     <Folder Include="Models\" />
     <Folder Include="Scripts\FlexSlider\bower_components\NewFolder1\" />
     <Folder Include="Scripts\FlexSlider\node_modules\jquery\src\attributes\" />
