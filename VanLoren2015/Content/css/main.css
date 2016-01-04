@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light|Architects+Daughter|Shadows+Into+Light+Two);
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light|Shadows+Into+Light+Two|Rock+Salt);
 article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}
 audio,canvas,video{display:inline-block}
 audio:not([controls]){display:none;height:0}
@@ -37,8 +37,18 @@ input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit
 button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
 textarea{overflow:auto;vertical-align:top;}
 table{border-collapse:collapse;border-spacing:0}
-footer{position:absolute;bottom:0;width:100%}footer img#seal{display:block;height:auto;width:auto;position:absolute;bottom:0;right:0;padding:0 10px 10px 0}
+header ul#social img{display:block;height:53px;width:53px;opacity:0.4}
+footer img#seal{display:block;position:absolute;height:50px;width:50px;right:0;margin:0 20px 20px 0}
+#navigation ul#nav img#nav-work{display:block;height:31px;width:66px}
+#navigation ul#nav img#nav-play{display:block;height:31px;width:66px}
+#navigation ul#nav img#nav-life{display:block;height:31px;width:66px}
+#navigation ul#nav img#nav-photos{display:block;height:31px;width:66px}
 html,body{margin:0;padding:0;background-color:#dac3b3}
-footer{text-align:right;vertical-align:baseline}
+header{display:block;position:absolute;right:0;margin-right:20px}
+footer{display:block;position:fixed;bottom:0;width:100%}footer div#vanessa-loren-dai{position:relative;margin:15px 0 0 20px}
+footer ul#footer{display:table;list-style:none;height:55px;width:100%}footer ul#footer li{display:table-cell;width:50%}
+ul#social{padding:0;display:table;list-style:none}ul#social li{display:table-cell}
+ul#nav{display:table;list-style:none}ul#nav li{display:table-cell;padding-right:20px}
 #main{background-image:url('/Content/images/main/background-main.png');background-size:cover;position:fixed;height:100vh;width:100vw}
-#logo{font-family:'Shadows Into Light Two';font-size:2em}
+#navigation{position:absolute;left:60%;top:60%}
+.font3{font-family:'Rock Salt';font-size:1em}

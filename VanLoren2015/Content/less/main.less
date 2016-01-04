@@ -1,9 +1,10 @@
 ﻿@import (less) '../vendor/normalize/normalize.css';
 @import 'icons.less';
-@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light|Architects+Daughter|Shadows+Into+Light+Two);
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light|Shadows+Into+Light+Two|Rock+Salt);
 
 @font1: 'Shadows Into Light';
 @font2: 'Shadows Into Light Two';
+@font3: 'Rock Salt';
 
 html, body {
     margin: 0;
@@ -11,9 +12,56 @@ html, body {
     background-color: #dac3b3;
 }
 
+header {
+    display: block;
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+}
+
 footer {
-    text-align:right;
-    vertical-align: baseline;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    div#vanessa-loren-dai {
+        position: relative;
+        margin:15px 0 0 20px;
+    }
+
+    ul#footer {
+        display: table;
+        list-style:none;
+        height: 55px;
+        width: 100%;
+
+        li {
+            display: table-cell;
+            width:50%;
+            
+        }
+    }
+}
+
+ul#social {
+    padding: 0;
+    display: table;
+    list-style: none;
+
+    li {
+        display: table-cell;
+    }
+}
+
+ul#nav {
+    display: table;
+    list-style:none;
+
+    li {
+        display: table-cell;
+        padding-right: 20px;
+    }
 }
 
 #main {
@@ -24,7 +72,13 @@ footer {
     width:100vw;
 }
 
-#logo {
-    font-family:@font2;
-    font-size:2em;
+#navigation {
+    position: absolute;
+    left:60%;
+    top: 60%;
+}
+
+.font3 {
+    font-family:@font3;
+    font-size:1em;
 }
