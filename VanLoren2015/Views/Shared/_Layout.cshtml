@@ -20,13 +20,25 @@
     </head>
 
     <body>
-        @RenderBody()
+        <header>
+            <ul id="social">
+                @*<li><a href="https://www.facebook.com/vlorend"><img id="goodreads" class="icon-goodreads" /></a></li>*@
+                <li><a href="https://www.facebook.com/vlorend"><img id="facebook" class="icon-facebook29" /></a></li>
+                <li><a href="https://twitter.com/vlorend"><img id="twitter" class="icon-twitter21" /></a></li>
+                @if (ViewBag.Title == "Work")
+                { <li><a href="https://www.facebook.com/vlorend"><img id="linkedin" class="icon-linkedin12" /></a></li> }
+                </ul>
+            </header>
 
-        <footer>
-            <ul id="footer">
-                <li><div id="vanessa-loren-dai"><span class="font3">vanessa loren dai</span></div></li>
-                <li><img id="seal" class="icon-seal" /></li>
-            </ul>
-        </footer>
-    </body>
-</html>
+            <div id="main">
+                @RenderBody()
+            </div>
+
+            <footer>
+                <ul id="footer">
+                    <li><div id="vanessa-loren-dai"><span class="font3">vanessa loren dai</span></div></li>
+                    <li><img id="seal" src="~/Content/images/icons/seal.png" /></li>
+                </ul>
+            </footer>
+        </body>
+    </html>
