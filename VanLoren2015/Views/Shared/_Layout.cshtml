@@ -1,4 +1,6 @@
 ﻿@using System.Configuration
+@using VanLoren2015.Utilities
+
 <!DOCTYPE html>
 
 <html>
@@ -22,12 +24,27 @@
     <body>
         <header>
             <ul id="social">
-                @*<li><a href="https://www.facebook.com/vlorend"><img id="goodreads" class="icon-goodreads" /></a></li>*@
                 <li><a href="https://www.facebook.com/vlorend"><img id="facebook" class="icon-facebook29" /></a></li>
                 <li><a href="https://twitter.com/vlorend"><img id="twitter" class="icon-twitter21" /></a></li>
-                @if (ViewBag.Title == "Work")
-                { <li><a href="https://www.facebook.com/vlorend"><img id="linkedin" class="icon-linkedin12" /></a></li> }
-                </ul>
+                @if (ViewBag.PageType == ApplicationConstants.PageTypes.work)
+                {
+                    <li><a href="https://www.facebook.com/vlorend"><img id="linkedin" class="icon-linkedin12" /></a></li>
+                    @*<li><a href="https://www.facebook.com/vlorend"><img id="github" class="icon-github" /></a></li>*@
+                }
+                @if (ViewBag.PageType == ApplicationConstants.PageTypes.play) { }
+                @if (ViewBag.PageType == ApplicationConstants.PageTypes.life)
+                {
+                    <li><a href="https://www.facebook.com/vlorend"><img id="goodreads" class="icon-goodreads" /></a></li>
+                    @*<li><a href="https://www.facebook.com/vlorend"><img id="pinterest" class="icon-pinterest" /></a></li>*@
+                }
+                @if (ViewBag.PageType == ApplicationConstants.PageTypes.photos)
+                {
+                    @*<li><a href="https://www.facebook.com/vlorend"><img id="instagram" class="icon-instagram" /></a></li>*@
+                }
+            </ul>
+
+
+
             </header>
 
             <div id="main">
