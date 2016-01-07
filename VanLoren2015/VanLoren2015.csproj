@@ -148,7 +148,6 @@
     <Content Include="Scripts\FlexSlider\node_modules\jquery\src\support.js" />
     <Content Include="Scripts\FlexSlider\node_modules\jquery\src\traversing.js" />
     <Content Include="Scripts\FlexSlider\node_modules\jquery\src\wrap.js" />
-    <Content Include="Content\less\logo.less" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -161,6 +160,7 @@
     <Content Include="Content\vendor\normalize\LICENSE.md" />
     <Content Include="Content\vendor\normalize\README.md" />
     <Content Include="Content\less\icons.less" />
+    <None Include="Properties\PublishProfiles\Host4Asp.Net.pubxml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />

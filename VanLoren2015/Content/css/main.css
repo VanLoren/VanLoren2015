@@ -43,13 +43,15 @@ footer img#seal{display:block;position:absolute;height:50px;width:50px;right:0;m
 #navigation ul#nav img#nav-play{display:block;height:31px;width:66px}
 #navigation ul#nav img#nav-life{display:block;height:31px;width:66px}
 #navigation ul#nav img#nav-photos{display:block;height:31px;width:66px}
-html,body{margin:0;padding:0;color:#000;background-color:#dac3b3}
+html,body{margin:0;padding:0;color:#000;background-color:#dac3b3;font-family:'Shadows Into Light'}
 header{display:block;position:absolute;right:0;margin-right:20px;z-index:1}
 footer{display:block;position:fixed;bottom:0;width:100%}footer div#vanessa-loren-dai{position:relative}
 footer ul#footer{display:table;list-style:none;height:55px;width:100%}footer ul#footer li{display:table-cell;width:50%}
+div#play{padding:40px}div#play div#map{height:0;overflow:hidden;height:700px;width:100%}
 ul#social{padding-right:20px;display:table;list-style:none}ul#social li{display:table-cell}
 ul#nav{display:table;list-style:none}ul#nav li{display:table-cell;padding-right:20px;text-align:center}
 ul#nav li a{font-size:0.5em;font-weight:bold;text-decoration:none;color:#932822}
+h1{font-family:'Shadows Into Light Two'}
 #homepage{background-image:url('/Content/images/main/background-main.png');background-size:cover;position:fixed;height:100vh;width:100vw}
 #navigation{position:absolute;left:60%;top:60%}
 .font1{font-family:'Shadows Into Light';font-size:1em}
