@@ -90,7 +90,19 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\icons\favicon.ico" />
+    <Content Include="Content\images\icons\life.png" />
+    <Content Include="Content\images\icons\photos.png" />
+    <Content Include="Content\images\icons\play.png" />
+    <Content Include="Content\images\icons\seal.png" />
+    <Content Include="Content\images\icons\work.png" />
+    <Content Include="Content\images\main\background-main.png" />
     <Content Include="Content\images\main\logo.gif" />
+    <Content Include="Content\svg\facebook29.svg" />
+    <Content Include="Content\svg\goodreads.svg" />
+    <Content Include="Content\svg\linkedin12.svg" />
+    <Content Include="Content\svg\twitter21.svg" />
+    <Content Include="Content\vendor\normalize\normalize.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Gruntfile.js" />
@@ -136,7 +148,6 @@
     <Content Include="Scripts\FlexSlider\node_modules\jquery\src\support.js" />
     <Content Include="Scripts\FlexSlider\node_modules\jquery\src\traversing.js" />
     <Content Include="Scripts\FlexSlider\node_modules\jquery\src\wrap.js" />
-    <Content Include="Content\less\logo.less" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -144,6 +155,12 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\vendor\normalize\.bower.json" />
+    <Content Include="Content\vendor\normalize\bower.json" />
+    <Content Include="Content\vendor\normalize\LICENSE.md" />
+    <Content Include="Content\vendor\normalize\README.md" />
+    <Content Include="Content\less\icons.less" />
+    <None Include="Properties\PublishProfiles\Host4Asp.Net.pubxml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
@@ -160,9 +177,11 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\ApplicationConstants.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
+    <Content Include="packages.config" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
@@ -194,6 +213,9 @@
     <Content Include="package.json" />
     <Content Include="Content\less\main.less" />
     <Content Include="Scripts\jquery-1.9.1.min.map" />
+    <Content Include="Views\Work\Index.cshtml" />
+    <Content Include="Views\Play\Index.cshtml" />
+    <Content Include="Views\Life\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -210,9 +232,6 @@
     <Folder Include="Scripts\FlexSlider\node_modules\jquery\src\core\" />
     <Folder Include="Scripts\FlexSlider\node_modules\jquery\src\css\" />
     <Folder Include="Scripts\FlexSlider\node_modules\jquery\src\data\" />
-    <Folder Include="Views\Life\" />
-    <Folder Include="Views\Play\" />
-    <Folder Include="Views\Work\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
