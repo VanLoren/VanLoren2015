@@ -19,44 +19,46 @@
             grunticon(["/Content/images/icons.data.svg.css", "/Content/images/icons.data.png.css", "/Content/images/icons.fallback.css"]);
         </script>
         <noscript><link href="/Content/Assets/NVhomes/images/icons/icons.fallback.css" rel="stylesheet"></noscript>
-
-        @RenderSection("script")
     </head>
 
     <body>
-        <header>
-            <ul id="social">
-                <li><a href="https://www.facebook.com/vlorend"><img id="facebook" class="icon-facebook29" /></a></li>
-                <li><a href="https://twitter.com/vlorend"><img id="twitter" class="icon-twitter21" /></a></li>
-                @if (ViewBag.PageType == ApplicationConstants.PageTypes.work)
-                {
-                    <li><a href="https://www.facebook.com/vlorend"><img id="linkedin" class="icon-linkedin12" /></a></li>
-                    @*<li><a href="https://www.facebook.com/vlorend"><img id="github" class="icon-github" /></a></li>*@
-                }
-                @if (ViewBag.PageType == ApplicationConstants.PageTypes.play) { }
-                @if (ViewBag.PageType == ApplicationConstants.PageTypes.life)
-                {
-                    <li><a href="https://www.facebook.com/vlorend"><img id="goodreads" class="icon-goodreads" /></a></li>
-                    @*<li><a href="https://www.facebook.com/vlorend"><img id="pinterest" class="icon-pinterest" /></a></li>*@
-                }
-                @if (ViewBag.PageType == ApplicationConstants.PageTypes.play) { }
+        <div id="page">
+            <header>
+                <ul id="social">
+                    <li><a href="https://www.facebook.com/vlorend"><img id="facebook" class="icon-facebook29" /></a></li>
+                    <li><a href="https://twitter.com/vlorend"><img id="twitter" class="icon-twitter21" /></a></li>
+                    @if (ViewBag.PageType == ApplicationConstants.PageTypes.work)
+                    {
+                        <li><a href="https://www.facebook.com/vlorend"><img id="linkedin" class="icon-linkedin12" /></a></li>
+                        @*<li><a href="https://www.facebook.com/vlorend"><img id="github" class="icon-github" /></a></li>*@
+                    }
+                    @if (ViewBag.PageType == ApplicationConstants.PageTypes.play) { }
+                    @if (ViewBag.PageType == ApplicationConstants.PageTypes.life)
+                    {
+                        <li><a href="https://www.facebook.com/vlorend"><img id="goodreads" class="icon-goodreads" /></a></li>
+                        @*<li><a href="https://www.facebook.com/vlorend"><img id="pinterest" class="icon-pinterest" /></a></li>*@
+                    }
+                    @if (ViewBag.PageType == ApplicationConstants.PageTypes.play) { }
                     @if (ViewBag.PageType == ApplicationConstants.PageTypes.photos)
                     {
                         @*<li><a href="https://www.facebook.com/vlorend"><img id="instagram" class="icon-instagram" /></a></li>*@
-                                }
-                @if (ViewBag.PageType == ApplicationConstants.PageTypes.play) { }
-            </ul>
-        </header>
+                    }
+                    @if (ViewBag.PageType == ApplicationConstants.PageTypes.play) { }
+                </ul>
+            </header>
 
-        <div id="main">
-            @RenderBody()
+            <div id="main">
+                @RenderBody()
+            </div>
+
+            <footer id="main-footer">
+                <ul id="footer">
+                    <li><div id="vanessa-loren-dai"><span class="font3">vanessa loren dai</span></div></li>
+                    <li><img id="seal" src="~/Content/images/icons/seal.png" /></li>
+                </ul>
+            </footer>
         </div>
-
-        <footer>
-            <ul id="footer">
-                <li><div id="vanessa-loren-dai"><span class="font3">vanessa loren dai</span></div></li>
-                <li><img id="seal" src="~/Content/images/icons/seal.png" /></li>
-            </ul>
-        </footer>
     </body>
     </html>
+
+@RenderSection("script")

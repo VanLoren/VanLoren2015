@@ -11,25 +11,21 @@ html, body {
     padding: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden;
     color: #000;
     background-color: #dac3b3;
-<<<<<<< HEAD
-    font: @font1;
-=======
     font-family: @font1;
->>>>>>> f3e5b2ac778874f4730eba858cfbfe61f4e7736f
 }
 
 header {
     display: block;
     position: absolute;
     right: 0;
+    top: 0;
     margin-right: 20px;
     z-index: 1;
 }
 
-footer {
+footer#main-footer {
     display: block;
     position: fixed;
     bottom: 0;
@@ -51,6 +47,36 @@ footer {
         }
     }
 }
+div#page { 
+    position: relative;
+}
+
+div#work {    
+    padding: 100px 100px 0 100px;
+
+    div#resume {
+        text-align: center;
+        letter-spacing: 3px;
+    }
+
+    .resume-title {
+        text-decoration: underline;
+        font-weight: bold;
+        font-size: 1.2em;
+        text-align: left;
+    }
+
+    ul.resume-list-tech {
+        text-align: left;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .resume-p {
+        text-align:left;
+    }
+}
 
 div#play    {
     padding: 40px;
@@ -63,6 +89,7 @@ div#play    {
 }
 
 ul#social {
+    right: 0;
     padding-right: 20px;
     display: table;
     list-style: none;
@@ -91,6 +118,10 @@ ul#nav {
 }
 
 h1 {
+    font-family: @font1;
+}
+
+h2 {
     font-family: @font2;
 }
 

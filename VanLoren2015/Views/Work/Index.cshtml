@@ -3,7 +3,102 @@
 @{ ViewBag.PageType = ApplicationConstants.PageTypes.work; }
 
 <div id="work">
+    <div id="resume">
+        <h2>VANESSA LOREN DAI</h2>
+        <h2>vanloren1377d@gmail.com</h2>
 
+        <p class="font2 resume-title">Technical Skills:</p>
+        <ul class="resume-list-tech">
+            <li><b>Languages:</b> C#, JAVA, PHP, SQL, XML, JavaScript, HTML, CSS, Python</li>
+            <li><b>IDE:</b> Visual Studio 2015, Eclipse, Xamarin, PyCharm</li>
+            <li><b>APIs:</b>  Google Android, Facebook, Parse</li>
+            <li><b>Frameworks:</b>  Micrsoft .NET 4.5 MVC 5, DotNetNuke 6.0, MS SharePoint 2010, Laravel, Django</li>
+            <li><b>Databases:</b>  SQL Server, MySQL</li>
+        </ul>
+
+        <br />
+        <p class="font2 resume-title">Experience:</p>
+        <p class="resume-p">
+            <b>HZDG</b>, <i>Senior .Net Developer</i> <br />
+            09/2013 - Present
+        </p>
+
+        <p class="resume-p">
+            <b>AKQA</b>, <i>Software Engineer</i> <br />
+            07/2012 – 07/2013
+        </p>
+
+        <p class="resume-p">
+            <b>Gannet/USA Today</b>, <i>Senior .Net Developer</i> <br />
+            07/2011 – 08/2012
+        </p>
+
+        <p class="resume-p">
+            <b>RTCRM</b>, <i>Senior Developer</i> <br />
+            05/2008 – 07/2011
+        </p>
+        
+        <p class="resume-p">
+            <b>Access Systems, Inc.</b>, <i>Principal Web Engineer - Contracted to Federal Bureau of Investigation</i> <br />
+            08/2007 – 02/2008
+        </p>
+        
+        <p class="resume-p">
+            <b>MBO Partners, Inc.</b>, <i>UI Analyst - Contracted to Computer Sciences Corporation</i> <br />
+            03/2007-05/2007
+        </p>
+        
+        <p class="resume-p">
+            <b>Golden Key Group, LLC</b>, <i>SharePoint Designer/Web Developer - Contracted to ACT</i> <br />
+            11/2006 – 01/2007
+        </p>
+        
+        <p class="resume-p">
+            <b>Information Analysis, Inc.</b>, <i>Web Developer - Contracted to Department of Treasury FinCEN Unit</i> <br />
+            02/2005 – 10/2006
+        </p>
+        
+        <p class="resume-p">
+            <b>Force 3, Inc.</b>, <i>Web Master</i> <br />
+            07/2004 – 01/2005
+        </p>
+        
+        <p class="resume-p">
+            <b>Renaissance Information Systems, Inc.</b>, <i>Web Applications Developer</i> <br />
+            01/2002 – 06/2004
+        </p>
+        
+        <p class="resume-p">
+            <b>E-Site Marketing, LLC</b>, <i>Web Developer, Contractor</i> <br />
+            10/2001 - 12/2001
+        </p>
+        
+        <p class="resume-p">
+            <b>Intervise, LLC</b>, <i>Web Application Developer</i> <br />
+            07/2000 – 09/2001
+        </p>
+        
+        <p class="resume-p">
+            <b>Science Appications International Corporation</b>, <i>Intern for Web Applications Development Team</i> <br />
+            07/2004 – 01/2005
+        </p>
+        
+        <p class="resume-p">
+            <b>Logicon Syscon, Inc.</b>, <i>Technical Assistent for the Logistics Team</i> <br />
+            07/2004 – 01/2005
+        </p>
+
+        <br />
+        <p class="font2 resume-title">Education</p>
+        <p class="resume-p">
+            <b>University Of Maryland</b>, BS Computer Science
+        </p>
+    </div>
 </div>
 
-@section script {}
+@section script {
+    @* Javascript to change footer style position from fixed to static. *@
+    <script type="text/javascript">
+        document.getElementById("main-footer").style.position = "static";
+    </script>
+}
